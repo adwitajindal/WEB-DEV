@@ -1,0 +1,61 @@
+DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+.collapse-content {
+
+max-height: 0;
+
+overflow: hidden;
+
+transition: max-height 0.2s ease-out;
+
+}
+
+.collapse-content:target {
+
+max-height: 500px; /* Set to a value greater than the content's height */ transition: max-height 0.5s ease-in; }
+
+.collapse-trigger {
+
+display: block;
+
+margin: 20px 0;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div>
+
+<a href="#collapseContent" class="collapse-trigger btn btn-primary">Toggle Content</a>
+
+<div id="collapseContent" class="collapse-content">
+
+<div class="card card-body mt-3">
+
+This is the content that will be collapsed or expanded based on the button click.
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

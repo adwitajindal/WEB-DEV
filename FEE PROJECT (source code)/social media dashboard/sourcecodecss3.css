@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ... (previous styles remain unchanged) */
+#scroller-in{
+    background-color:transparent;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to bottom right, #0081a7, #00afb9); /* Use the welcome section colors */
+    color: #fdfcdc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+}
+
+/* ... (previous styles remain unchanged) */
+
+/* Welcome Container Styles */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.welcome-container,
+.image-content {
+    text-align: center;
+    padding: 50px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.image-content img {
+    width: 60%;
+    border-radius: 35%; /* Optional: Add border-radius to the image */
+}
+
+
+.text-content {
+    flex: 1;
+}
+
+.tagline {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: fadeInDown 1s ease-in-out;
+    color: #00afb9; /* Tagline color */
+
+}
+
+.text-content p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out;
+    color: #f07167; /* Paragraph text color */
+}
+
+.text-content a {
+    background-color: #0081a7;
+    color: #fdfcdc; /* Button text color */
+    padding: 20px 30px ;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 21px;
+    margin-right: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.text-content a:hover {
+    background-color: #fed9b7;
+    color: #292929; /* Hover text color */
+}
+.btn-contact {
+    background-color: #292929; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #f07167; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+/* ... (remaining styles remain unchanged) */
+
+/* Photo Links Styles */
+.photo-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.photo-link {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.photo-link:hover {
+    transform: scale(1.1);
+}
+
+/* Second Half Content Styles */
+.features-container, .pricing-container, .contact-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.features-container h2, .pricing-container h2, .contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.features-container p, .pricing-container p, .contact-container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.feature, .contact-links {
+    margin-bottom: 40px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Pricing Container Styles */
+.pricing-container {
+    background: linear-gradient(to bottom right, #0081a7, #00afb9);
+    color: #fdfcdc;
+}
+
+.pricing-container h2 {
+    color: #fdfcdc;
+}
+
+.pricing-container p {
+    color: #fdfcdc;
+}
+
+.btn-learn-more-pricing {
+    background: linear-gradient(to bottom right, #fed9b7, #f07167);
+    color: #fdfcdc;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-learn-more-pricing:hover {
+    background: linear-gradient(to bottom right, #f07167, #fed9b7);
+    color: #fff;
+}
+
+/* Contact Container Styles */
+.contact-container {
+    background: linear-gradient(to bottom right, #f07167, #fed9b7);
+    color: #fdfcdc;
+}
+
+.contact-container h2 {
+    color: #fdfcdc;
+}
+
+.contact-container p {
+    color: #fdfcdc;
+}
+
+.contact-links a {
+    display: block;
+    color: #fdfcdc;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.contact-links a:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* Animation Styles */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    /* ... (previous responsive styles remain unchanged) */
+}

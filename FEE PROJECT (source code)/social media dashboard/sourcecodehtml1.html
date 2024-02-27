@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sourcecodecss2.css">
+    <title>Social Media Tracker</title>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-box">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        <button>    <a href="sourcecodehtml2.html" button type="button" onclick="login()">Login</a button></button>
+
+            <p class="error-message" id="errorMessage"></p>
+        </form>
+    </div>
+</div>
+
+<div class="container" id="mainContainer" style="display: none;">
+    <h1>Social Media Tracker</h1>
+    <div class="social-media" id="facebook">
+        <h2>Facebook</h2>
+        <p class="followers" id="facebook-followers">0</p>
+        <button onclick="increaseFollowers('facebook')">Increase Followers</button>
+    </div>
+    <!-- Add similar sections for other social media platforms -->
+
+    <div class="total-followers">
+        <h2>Total Followers</h2>
+        <p id="total-followers">0</p>
+        <button onclick="resetFollowers()">Reset All</button>
+    </div>
+</div>
+
+<script src="sourcecodejs2.js"></script>
+</body>
+</html>

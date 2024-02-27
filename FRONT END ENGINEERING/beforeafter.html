@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements Example</title>
+
+    <style>
+        .quote-container {
+            text-align: center;
+
+            margin: 50px;
+
+        }
+
+        .quote::before {
+            content: "\201C";
+            /* Left double quotation mark */
+
+            font-size: 36px;
+
+            color: blue;
+            margin-right: 10px;
+
+        }
+
+        .quote::after {
+
+            content: "\201D";
+            /* Right double quotation mark */
+
+            font-size: 36px;
+
+            color: rgb(255, 21, 0);
+
+            margin-left: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="quote-container">
+        <p class="quote"> This is a qouted text.</p>
+    </div>
+</body>
+
+</html>

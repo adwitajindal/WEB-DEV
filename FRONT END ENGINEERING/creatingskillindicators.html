@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*  CSS for the Skill indicators */
+
+        .skills {
+
+            /* Your existing CSS for the Skills section */
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: flex-start;
+        }
+
+        .skills ul {
+
+            /* Your existing CSS for the Skills list */
+
+            list-style: none;
+
+            padding: 0;
+        }
+
+        .skill-name {
+
+            font-weight: bold;
+        }
+
+        .skill-bar {
+
+            display: flex;
+            align-items: center;
+
+            width: 100%;
+
+            height: 20px;
+
+            background-color: #ddd;
+            border-radius: 5px;
+
+            margin-top: 5px;
+        }
+
+        .skill-level {
+
+            border-radius: 5px;
+            background-color: #007acc;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .skill-level-90 {
+            width: 90%;
+            /* Adjust the width for the will level */
+        }
+
+        .skill-level-80 {
+            width: 80%;
+            /* Adjust the with for the skill level */
+        }
+
+        /* add more classes for different skill level*/
+    </style>
+</head>
+
+<body>
+
+    <section class="skills">
+
+        <h3>Skills</h3>
+
+        <ul>
+
+            <li>
+
+                <span class="skill-name">Web Development</span>
+
+                <div class="skill-bar">
+
+
+                    <div class="skill-level skill-level-90"></div>
+                    <div class="skill-level">90%</div>
+                </div>
+
+            </li>
+
+            <li>
+
+                <span class="skill-name">JavaScript</span>
+
+                <div class="skill-bar">
+
+                    <div class="skill-level skill-level-80"></div>
+
+                </div>
+
+            </li>
+
+            <!-- Add more skills as needed -->
+
+        </ul>
+
+    </section>
+
+
+
+</body>
+
+</html>

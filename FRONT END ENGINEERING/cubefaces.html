@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .cube {
+
+            width: 60px;
+
+            height: 60px;
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform-style: preserve-3d;
+
+            transform: rotateX(240deg) rotateY(-5deg) rotateZ(-155deg);
+
+        }
+
+        .side {
+
+            width: 100%;
+
+            height: 100%;
+
+            top: 0;
+
+            left: 0;
+
+            position: absolute;
+
+            border-radius: 10%;
+
+        }
+
+        .top {
+
+            transform: translateZ (-60px);
+
+            background: grey;
+
+        }
+
+        .front {
+
+            transform: rotateX(90deg);
+
+            transform-origin: bottom;
+
+            background: grey;
+
+        }
+
+        .left {
+
+            transform: translateZ (-60px) rotateY(90deg);
+
+            width: 60px;
+
+            transform-origin: right;
+
+            background: grey;
+
+        }
+    </style>
+</head>
+
+
+
+<div class="cube">
+
+    <div class="side top"></div>
+
+    <div class="side left"></div>
+
+    <div class="side front"></div>
+
+</div>
+
+</html>
