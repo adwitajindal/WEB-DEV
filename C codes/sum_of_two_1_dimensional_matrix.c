@@ -3,26 +3,32 @@
 #include <stdio.h>
 void main()
 {
-    int j;
-    int a[4], b[4], c[4];
-    for (j = 0; j < 4; j++)
+    // input the size of array
+    int length;
+    printf("Enter the size of largest array: ");
+    scanf("%d", &length);
+
+    // declaring arrays of the specified length
+    int i;
+    int a[length], b[length], c[length];
+    for (i = 0; i < length; i++)
     {
-        printf("Enter value (First matrix): ");
-        scanf("%d", &a[j]);
+        printf("Enter value [%d] (First matrix): ", i + 1);
+        scanf("%d", &a[i]);
     }
-    j = 0;
-    for (j = 0; j < 4; j++)
+    i = 0;
+    for (i = 0; i < length; i++)
     {
-        printf("Enter value (second matrix): ");
-        scanf("%d", &b[j]);
+        printf("Enter value [%d] (second matrix): ", i + 1);
+        scanf("%d", &b[i]);
     }
-    j = 0;
-    printf("[");
-    for (j = 0; j < 4; j++)
+    i = 0;
+    printf("Sum of the two matrix is [\t");
+    for (i = 0; i < length; i++)
     {
-        c[j] = a[j] + b[j];
-        printf("\'%d\'\t", c[j]);
+        c[i] = a[i] + b[i];
+        printf("\'%d\'\t", c[i]);
         continue;
     }
-     printf("]");
+    printf("]");
 }
