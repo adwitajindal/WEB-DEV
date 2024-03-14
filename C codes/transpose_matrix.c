@@ -2,8 +2,11 @@
 #include <stdio.h>
 int main()
 {
-    int row = 3;
-    int col = 3;
+    int row, col;
+    printf("Enter the no. of rows: ");
+    scanf("%d", &row);
+    printf("Enter the no. of columns: ");
+    scanf("%d", &col);
     int matrix[row][col], transpose[row][col];
     printf("Enter the elements of the matrix:\n");
     for (int i = 0; i < row; i++)
