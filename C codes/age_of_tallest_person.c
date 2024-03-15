@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 void main()
-{//
+{
     // declaring variables
     int num_person, i, age, height, tallest_person, eldest_person;
 
